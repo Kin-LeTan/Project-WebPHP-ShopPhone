@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LỊCH SỬ ĐẶT HÀNG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+/*css cho cột và hàng cho sản phẩm*/
+.column {
+  width: 100%;
+  padding: 10px;
+}
+.column_color{
+    width: 33.33%;
+    height:50%;
+    display: flex;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img_main{width:15%;}
+.all_color{width:65%;}
+.all_total{width:20%;}
+/*thực hiện responsive khi sang thiết bị*/
+@media screen and (max-width:600px) {
+    #change .img_main{order:1;width:30%;}
+    #change .all_total{order:2;width:70%;}
+    #change .all_color{order:3;width:100%;}
+    .column_color{width: 50%;}
+}
+/* css cho sản phẩm(product)*/
+.b{border: 1px solid blue}
+.g{border: 1px solid green}
+.r{border: 1px solid red}
+.y{border: 1px solid yellow}
+</style>
+</head>
+<body>
+<div class="container"><hr>
+<div class="row">
+<div class="column">
+    <div style="width:100%;border-bottom:1px solid gray;border-top:1px solid gray;margin-bottom: 3px;padding:2px 0px"><a style="float:right" href="#"><button style="border-radius:20px;font-weight:bold;background-image: linear-gradient(to bottom right,  #fca5f1, #b5ffff)">Xóa lịch sử</button></a>
+        <h5>Samsung Galaxy Z Fold3 5G  Z Fold3 5G  256GB</h5><h6 style="color:red">Giá: 999.999.999đ</h6>
+    </div>
+    <div class="row" id="change" style="width:100%;margin:0;border-bottom:1px solid gray;">
+    
+    <div class="img_main">
+    <img style="width:100%;" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg">
+    </div>
+    
+    <div class="all_color">
+    <b style="color:red">7 loại màu sản phẩm bạn đã đặt hàng:</b>
+    <div class="row" style="margin:0">
+    <div class="column_color">
+        <div style="width: 30%;"><img style="width:100%;" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg"></div>
+        <div style="width: 70%;"><b>X.biển</b><br><b>999.999.999đ</b><br><b>Số lượng: 100</b></div>
+    </div>
+    <div class="column_color">
+        <div style="width: 30%;"><img style="width:100%;" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg"></div>
+        <div style="width: 70%;"><b>X.biển</b><br><b>999.999.999đ</b><br><b>Số lượng: 100</b></div>
+    </div>
+    <div class="column_color">
+        <div style="width: 30%;"><img style="width:100%;" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg"></div>
+        <div style="width: 70%;"><b>X.biển</b><br><b>999.999.999đ</b><br><b>Số lượng: 100</b></div>
+    </div>
+    <div class="column_color">
+        <div style="width: 30%;"><img style="width:100%;" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg"></div>
+        <div style="width: 70%;"><b>X.biển</b><br><b>999.999.999đ</b><br><b>Số lượng: 100</b></div>
+    </div>
+    <div class="column_color">
+        <div style="width: 30%;"><img style="width:100%;" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg"></div>
+        <div style="width: 70%;"><b>X.biển</b><br><b>999.999.999đ</b><br><b>Số lượng: 100</b></div>
+    </div>
+    <div class="column_color">
+        <div style="width: 30%;"><img style="width:100%;" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg"></div>
+        <div style="width: 70%;"><b>X.biển</b><br><b>999.999.999đ</b><br><b>Số lượng: 100</b></div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="all_total">
+        <b style="color:red">Tổng quan đặt hàng:</b>
+        <li><b>Màu sản phẩm: 7 loại</b></li>
+        <li><b>Các loại: 33 x.biển, 33 đỏ, 33 vàng, 33 bạc, 33 tím, 33 x.lá, 33 đen</b></li>
+        <li><b>Tổng giá tất cả: 999.999.999đ</b></li>
+    </div>
+    </div><hr>
+    </div>
+
+</div>
+</div>
+    </div>
+</div>
+</div>
+</body>
+</html>
